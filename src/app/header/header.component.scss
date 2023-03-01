@@ -1,0 +1,27 @@
+#main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    color: #ffffff;
+  }
+  .nav {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+      &:hover {
+        + .child {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .child {
+      display: none;
+      position: absolute;
+      background-color: #313030;
+    }
+  }
+}
